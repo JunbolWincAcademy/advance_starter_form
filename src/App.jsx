@@ -1,16 +1,14 @@
+import { ControlledInputForm } from './ControlledInputForm.jsx';
+import { Center, Heading, Flex, Button, Input, Text, Square, Circle } from '@chakra-ui/react';
+
 function App() {
   return (
-    <div className="App">
-      <h1>Our beautiful form will be here:</h1>
-      <h1>Quotes:</h1>
-      <div className="quote">
-        <p>
-          My biggest fear is that people will attribute fake quotes to me and
-          millions of morons on the internet will believe it.
-        </p>
-        - <span>Albert Einstein</span>
-      </div>
-    </div>
+    <Center className="App">
+      <Flex flexDir="column" alignItems="center" width="90%" mt="50" textAlign="center">
+        <Heading mb="2rem">Add your quote</Heading>
+        <ControlledInputForm />
+      </Flex>
+    </Center>
   );
 }
 
